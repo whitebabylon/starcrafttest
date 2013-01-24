@@ -1,0 +1,122 @@
+* {
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	
+}
+
+body {
+	width: 100%;
+	display: inline;
+	background: url("/inc/images/scback.jpg") #000000;
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center; 
+background-size: 100% 100%;
+}
+
+.mainArea {
+	width: 925px;
+	margin: auto;
+
+
+}
+.header{
+height: 300px;
+
+}
+.header_left, .header_right, .header_top, .header_bottom{
+	position: relative;
+}
+
+.header_left{
+position:relative;
+float: left;
+height: 90%;
+width: 13px;
+background: url("/inc/images/head_left.png") repeat-y scroll 0 0 #FFFFFF; 
+}
+
+.header_right{
+float: left;
+height: 90%;
+width: 13px;
+background: url("/inc/images/head_right.png") repeat-y scroll 0 0 #FFFFFF; 
+
+}
+
+.header_top{
+float: top;
+height: 13px;
+width: 100%;
+background: url("/inc/images/head_top.png") repeat-x scroll 0 0 #FFFFFF; 
+}
+.header_bottom{
+float: left;
+height: 13px;
+width: 100%;
+background: url("/inc/images/head_bottom.png") repeat-x scroll 0 0 #FFFFFF; 
+}
+.header_content{
+position:relative;
+float:left;
+width: 898px;
+background: black;
+}
+.header_title{
+position:relative;
+height: auto;
+width: 800px;
+margin: auto;
+background-color: black;
+
+}
+.header_nav{
+position:relative;
+
+width: 100%;
+
+margin: auto;
+
+color: white;
+
+background: url("/inc/images/sc_nav.png") #000000;
+background-repeat:no-repeat;
+
+
+min-height: 227px;
+}
+.header_content .header_title img {
+margin: auto;
+}
+
+.body_content{
+min-height: 500px;
+color: white;
+}
+
+.header_nav_inside_top{
+min-height:100px;
+
+width: 100%;
+
+}
+
+.header_nav_inside_bottom{
+width: 100%;
+min-height: 10px;
+
+}
+
+.nav_item {
+padding: 10px;
+float: left;
+background: black;
+opacity: .75;
+}
+
+.nav_pane {
+margin: auto;
+font-size: 26px;
+}
