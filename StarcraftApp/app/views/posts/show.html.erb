@@ -1,38 +1,62 @@
-<p id="notice"><%= notice %></p>
- 
-<p>
-  <b>Name:</b>
-  <%= @post.name %>
-</p>
- 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
- 
-<p>
-  <b>Content:</b>
-  <%= @post.content %>
-</p>
+<div id="d_notice">
+  <p id="p_notice"><%= notice %></p>
+</div><!-- d_notice -->
+<div id="post_site">
+
+ <div id="d_postSection">
+   <div id="d_postTitle">
+          <div id="p_postTitle2">
+           <%= @post.title %>
+          </div>
+         </div><!-- d_postTitle -->
+    <div id="d_mainPost">
+
+        <div id="d_userInfo">
+          <p id="p_userName">
+            <%= @post.name %>
+          </p><!-- p_userNAme -->
+        </div><!-- d_userInfo -->
+        <div id="d_userPost">
+         
+         <div id="d_postContent">
+          <p id="p_postContent">
+            <%= @post.content %>
+          </p>
+         </div> <!-- d_postContent -->
+         <div id="d_tags">
+          <%= @post.tags.map { |t| t.name }.join(", ") %>
+         </div> <!--d_tags -->
+        </div><!-- d_userPost -->
+    </div><!-- d_mainPost-->
+
+ </div> <!-- d_postSection -->
+
+
+
 
  
-<p>
-  <b>Tags:</b>
-  <%= @post.tags.map { |t| t.name }.join(", ") %>
-</p>
- 
- 
-<h2>Comments</h2>
+
 <% @post.comments.each do |comment| %>
-  <p>
-    <b>Commenter:</b>
-    <%= comment.commenter %>
-  </p>
+ <div id="d_postSection">
+    <div id="d_mainPost">
+        <div id="d_userInfo">
+          <p id="p_userName">
+            <%= comment.commenter %>
+          </p><!-- p_userNAme -->
+        </div><!-- d_userInfo -->
+        <div id="d_userPost">
+        
+         <div id="d_postContent">
+          <p id="p_postContent">
+            <%= comment.body %>
+          </p>
+         </div> <!-- d_postContent -->
+        </div><!-- d_userPost -->
+    </div><!-- d_mainPost-->
+
+ </div> <!-- d_postSection -->
+
  
-  <p>
-    <b>Comment:</b>
-    <%= comment.body %>
-  </p>
 <% end %>
  
 <h2>Add a comment:</h2>
@@ -54,3 +78,5 @@
  
 <%= link_to 'Edit Post', edit_post_path(@post) %> |
 <%= link_to 'Back to Posts', posts_path %> |
+
+</div>

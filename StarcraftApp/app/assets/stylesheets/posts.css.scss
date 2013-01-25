@@ -1,3 +1,22 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body { background-image:url('app/assets/images/scback.jpg') !important; }
+#post_site { background-image:url('http://tutzor.com/sites/default/files/starcraft-Final_large.jpg') !important; background: url("/inc/images/scback.jpg") #000000;
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center; 
+background-size: 100% 100%;}
+#post_site * {opacity: .95 ;}
+ #d_notice {width:100%; background: gray;}
+ #d_postSection {min-height:200px; border-width: 1px; border-style: solid; border-color: 0F0F0F; background:transparent; }
+ #d_mainPost {margin: auto; position: relative; background: #2F2F2F; width: 924px; min-height: 180px; padding-top: 5px;}
+ #d_userInfo {float: left; width: 200px; min-height: 180px; background: #424242; color: white;}
+ #d_postTitle {width:924px; margin:auto; position:relative; background:#4545A6; color: black;min-height: 50px}
+ #d_postContent { color:#CDCDEA; float: left; width: 724px; min-height: 160px;}
+ #d_tags { width: 724px; background: #626262;  float: left; min-height: 20px; color: #000000;}
+
+ #p_postTitle2 { padding-top:15px; padding-left: 200px; background:#4545CE; font-size: 2.0em;}
+ #p_postContent { padding-left: 5px;}

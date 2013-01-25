@@ -1,7 +1,4 @@
 StarcraftApp::Application.routes.draw do
-  resources :starusers
-
-
   resources :forums
 
 
@@ -11,21 +8,11 @@ resources :posts do
   resources :comments
 end
 
+resource :user_session
+root :controller => "user_sessions", :action => "new"
 
-
-
-
-StarcraftApp::Application.routes.draw do
-
-resources :Starusers, :user_sessions
-
-match 'login' => 'user_sessions#new', :as => :login
-
-match 'logout' => 'user_sessions#destroy', :as => :logout
-
-match 'users' => 'starusers#index'
-
-end
+resource :account, :controller => "users"
+resources :users
 
  # get "home/index"
 
@@ -79,7 +66,6 @@ end
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'home#index'
-
 
   # See how all your routes lay out with "rake routes"
 

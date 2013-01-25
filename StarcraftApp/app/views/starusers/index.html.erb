@@ -1,0 +1,49 @@
+<h1>Listing users</h1>
+
+ <p id="notice"><%= notice %></p>
+
+<table>
+
+<tr>
+
+<th>Username</th>
+
+<th>Email</th>
+
+<th></th>
+
+<th></th>
+
+<th></th>
+
+</tr>
+
+ 
+
+<% @starusers.each do |staruser| %>
+
+<tr>
+
+<td><%= staruser.username %></td>
+
+<td><%= staruser.email %></td>
+
+<td><%= link_to 'Show', staruser %></td>
+
+<td><%= link_to 'Edit', edit_user_path(User) %></td>
+
+<td><%= link_to 'Destroy', User, :confirm => 'Are you sure?', :method => :delete %></td>
+
+</tr>
+
+<% end %>
+
+</table>
+
+ 
+
+<br />
+
+ 
+
+<%= link_to 'New User', new_staruser_path %>
