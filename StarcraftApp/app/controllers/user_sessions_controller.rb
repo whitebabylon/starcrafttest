@@ -16,7 +16,7 @@ respond_to do |format|
 
 format.html # new.html.erb
 
-format.xml { render :xml => @staruser_session }
+format.xml { render :xml => @user_session }
 
 end
 

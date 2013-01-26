@@ -20,15 +20,15 @@
 
  
 
-<% @starusers.each do |staruser| %>
+<% @users.each do |user| %>
 
 <tr>
 
-<td><%= staruser.username %></td>
+<td><%= user.username %></td>
 
-<td><%= staruser.email %></td>
+<td><%= user.email %></td>
 
-<td><%= link_to 'Show', staruser %></td>
+<td><%= link_to 'Show', user %></td>
 
 <td><%= link_to 'Edit', edit_user_path(User) %></td>
 
@@ -46,4 +46,4 @@
 
  
 
-<%= link_to 'New User', new_staruser_path %>
+<%= link_to 'New User', new_user_path %>

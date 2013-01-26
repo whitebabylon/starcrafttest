@@ -1,9 +1,7 @@
 StarcraftApp::Application.routes.draw do
-  resources :starusers
-
+  resources :users
 
   resources :forums
-
 
   resources :posts
 
@@ -17,13 +15,13 @@ end
 
 StarcraftApp::Application.routes.draw do
 
-resources :Starusers, :user_sessions
+resources :Users, :user_sessions
 
 match 'login' => 'user_sessions#new', :as => :login
 
 match 'logout' => 'user_sessions#destroy', :as => :logout
 
-match 'users' => 'starusers#index'
+match 'users' => 'users#index'
 
 end
 
