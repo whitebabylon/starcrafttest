@@ -1,8 +1,11 @@
+
 development:
   adapter: postgresql
   database: starcraft_development
   pool: 5
   timeout: 5000
+  username: postgres
+  
 test:
   adapter: postgresql
   database: starcraft_test
